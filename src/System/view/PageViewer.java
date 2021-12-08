@@ -1,11 +1,7 @@
-<<<<<<< HEAD:src/System/view/PageViewer.java
+
 package System.view;
 
-public class PageViewer {
-
-}
-=======
-package System;
+import System.model.Page;
 
 import java.util.ArrayList;
 
@@ -40,4 +36,4 @@ public class PageViewer {
 		}
 	}
 }
->>>>>>> 83dd6ee3b18d0d992e8338e12aac99bf31deb777:src/System/PageViewer.java
+
