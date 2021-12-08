@@ -10,8 +10,9 @@ public class Page {
 	private ArrayList<String> userList = new ArrayList<>();
 	private String link;
 	private something content;
-	List<Comment> commentList;
-	List<String> textList;
+
+	ArrayList<Comment> commentList;
+	ArrayList<String> textList;
 	
 	public Page(ArrayList<String> users, String link) {
 		//initialize the users with permission to access and the page link
@@ -24,7 +25,7 @@ public class Page {
 	public void addText(String text){
 		textList.add(text);
 	}
-	
+	public ArrayList<Comment> getCommentList() {return commentList;}
 	public String getLink() {
 		return link;
 	}

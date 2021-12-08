@@ -14,4 +14,8 @@ public class PageEditor {
     void uploadEmbeddedFile(){}
 
     void addText(String string){}
+
+    void savePage(){
+
+    }
 }

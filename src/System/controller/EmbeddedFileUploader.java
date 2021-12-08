@@ -1,6 +1,7 @@
 package System.controller;
 
 import System.model.EmbeddedFile;
+import System.model.Resource;
 
 public class EmbeddedFileUploader {
     private EmbeddedFile embeddedFile;
@@ -11,6 +12,10 @@ public class EmbeddedFileUploader {
 
     EmbeddedFile getEmbeddedFile(){ // upload embedded file to the page.
         return embeddedFile;
+    }
+
+    void uploadEmbeddedFile(Resource resource){
+        resource.addToResource(getEmbeddedFile());
     }
 
 }

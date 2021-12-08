@@ -13,9 +13,10 @@ public class Resource {
 	private ArrayList<String> userList = new ArrayList<>();
 	private String link;
 	private Content content;
-	List<Page> pageList;
-	List<Image> imageList;
-	List<EmbeddedFile> embeddedFileList;
+
+	ArrayList<Page> pageList;
+	ArrayList<Image> imageList;
+	ArrayList<EmbeddedFile> embeddedFileList;
 	
 	public Resource(ArrayList<String> users, String link, Content content) {
 		//initialize the users with permission to access and the page link
@@ -24,10 +25,10 @@ public class Resource {
 		//set content when resource is created; content cannot be changed
 		this.content = content;
 	}
-	void addToResource(Image image){ //upload an image to resource
+	public void addToResource(Image image){ //upload an image to resource
 		imageList.add(image);
 	}
-	void addToResource(EmbeddedFile embeddedFile){ //upload an image to resource
+	public void addToResource(EmbeddedFile embeddedFile){ //upload an image to resource
 		embeddedFileList.add(embeddedFile);
 	}
 	void getAllFiles(){ // get images and files, send to file access
@@ -48,3 +49,4 @@ public class Resource {
 			return valid;
 		}
 }
+

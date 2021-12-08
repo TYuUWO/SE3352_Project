@@ -1,6 +1,7 @@
 package System.controller;
 
 import System.model.Image;
+import System.model.Resource;
 
 public class ImageUploader {
     private Image image;
@@ -14,4 +15,7 @@ public class ImageUploader {
     }
     // returns image that was uploaded to the page
 
+    void uploadImage(Resource resource){
+        resource.addToResource(getImage());
+    }
 }

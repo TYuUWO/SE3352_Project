@@ -8,9 +8,9 @@ import java.util.Date;
 public class CommentEditor { //add comment to the page as a viewer
     private String comment;
     private String name;
-    private Date date;
+    private long date;
 
-   public void setComment(String name, Date date, String comment){
+   public void setComment(String name, long date, String comment){
         this.name = name;
         this.date = date;
         this.comment = comment;
