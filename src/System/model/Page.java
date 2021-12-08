@@ -9,7 +9,7 @@ public class Page {
 	
 	private ArrayList<String> userList = new ArrayList<>();
 	private String link;
-	private something content;
+	private Content content;
 
 	ArrayList<Comment> commentList;
 	ArrayList<String> textList;
@@ -32,8 +32,8 @@ public class Page {
 	//no setLink because link cannot be changed
 	
 	//method to change the page's content through the editor
-	public void setContent(putsomethinghere) {
-		this.content = putsomethinghere
+	public void setContent(Content putsomethinghere) {
+		this.content = putsomethinghere;
 	}
 	
 	//check whether user has permission to access the page

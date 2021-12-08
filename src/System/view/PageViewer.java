@@ -9,6 +9,7 @@ public class PageViewer {
 	
 	private String userId;
 	private Page loginPage;
+	private Page notFound;
 	private ArrayList<Page> pageList = new ArrayList<>();
 	
 	public PageViewer(String userId, ArrayList<Page> pageList) {
@@ -19,7 +20,8 @@ public class PageViewer {
 	
 	//user views page through link but must also be authorized to view the page
 	public Page getPage(String link, String userId){
-		Page page;
+		//if page is not found then return the notFound page
+		Page page = notFound;
 		
 		//get page with link
 		for(int i=0;i<pageList.size();i++) {
@@ -28,7 +30,7 @@ public class PageViewer {
 			}
 		}
 		
-		if (page.validate(userId, link)) {
+		if (page.validate(userId)) {
 			return page;
 		}
 		else {
